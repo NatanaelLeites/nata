@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dv09 Natanael</title>
+    <!-- estilos personalizados -->
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="#" class="header__logo">&lt;Dv09 Natanael /&gt;</a>
+                
+                <!-- nav -->
+                <nav class="header__nav">
+                    <a href="#about" class="header__nav-link">Sobre mí</a>
+                    <a href="#projects" class="header__nav-link">Proyectos</a>
+                    <a href="#skills" class="header__nav-link">Habilidades</a>
+                    <a href="#contact" class="header__nav-link">Contacto</a>
+                </nav>
+
+                <!-- btn-menu -->
+                <button class="header__menu-btn" id="menuBtn">
+                    <i class="fas fa-bars" id="menuIcon"></i>
+                </button>
+            </div>
+
+            <!-- nav mobile -->
+            <nav class="header__mobile-nav" id="mobileNav">
+                <a href="#about" class="header__mobile-link">Sobre mí</a>
+                <a href="#projects" class="header__mobile-link">Proyectos</a>
+                <a href="#skills" class="header__mobile-link">Habilidades</a>
+                <a href="#contact" class="header__mobile-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Frontend Developer</h1>
+                    <p class="hero__subtitle">
+                        Creando experiencias web modernas y funcionales con tecnologías de vanguardia
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#projects" class="btn btn--primary">Ver Proyectos</a>
+                        <a href="#" class="btn btn--outline">Descargar CV</a>
+                    </div>
+                    <div class="hero__social">
+                        <a href="#" class="hero__social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="hero__social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="hero__social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero__scroll">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- sobre -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section__title">Sobre mí</h2>
+                <div class="about__content">
+                    <div class="about__image">
+                        <div class="about__avatar">👨‍💻</div>
+                    </div>
+                    <div class="about__text">
+                        <p class="about__paragraph">
+                            Soy un desarrollador frontend apasionado por crear interfaces de usuario intuitivas y experiencias web
+                            excepcionales. Con experiencia en tecnologías modernas como React, Next.js y TypeScript.
+                        </p>
+                        <p class="about__paragraph">
+                            Me enfoco en escribir código limpio, mantenible y escalable, siempre buscando las mejores prácticas y
+                            las últimas tendencias en desarrollo web.
+                        </p>
+                        <div class="about__stats">
+                            <div class="stat-card">
+                                <div class="stat-card__number">3+</div>
+                                <div class="stat-card__label">Años de experiencia</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-card__number">50+</div>
+                                <div class="stat-card__label">Proyectos completados</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section__title">Proyectos Destacados</h2>
+                <div class="projects__grid">
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <img src="https://via.placeholder.com/400x200/374151/9CA3AF?text=E-commerce+Platform" alt="E-commerce Platform">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">E-commerce Platform</h3>
+                            <p class="project-card__description">
+                                Plataforma de comercio electrónico completa con carrito de compras, pagos y gestión de inventario.
+                            </p>
+                            <div class="project-card__technologies">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Next.js</span>
+                                <span class="tech-badge">Stripe</span>
+                                <span class="tech-badge">Tailwind CSS</span>
+                            </div>
+                            <div class="project-card__buttons">
+                                <a href="#" class="btn btn--small btn--outline">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                                <a href="#" class="btn btn--small btn--outline">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <img src="https://via.placeholder.com/400x200/374151/9CA3AF?text=Task+Management" alt="Task Management App">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Task Management App</h3>
+                            <p class="project-card__description">
+                                Aplicación de gestión de tareas con funcionalidades de colaboración en tiempo real.
+                            </p>
+                            <div class="project-card__technologies">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">TypeScript</span>
+                                <span class="tech-badge">Firebase</span>
+                                <span class="tech-badge">Material-UI</span>
+                            </div>
+                            <div class="project-card__buttons">
+                                <a href="#" class="btn btn--small btn--outline">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                                <a href="#" class="btn btn--small btn--outline">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <img src="https://via.placeholder.com/400x200/374151/9CA3AF?text=Weather+Dashboard" alt="Weather Dashboard">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Weather Dashboard</h3>
+                            <p class="project-card__description">
+                                Dashboard del clima con pronósticos detallados y visualizaciones interactivas.
+                            </p>
+                            <div class="project-card__technologies">
+                                <span class="tech-badge">Vue.js</span>
+                                <span class="tech-badge">Chart.js</span>
+                                <span class="tech-badge">OpenWeather API</span>
+                                <span class="tech-badge">CSS3</span>
+                            </div>
+                            <div class="project-card__buttons">
+                                <a href="#" class="btn btn--small btn--outline">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                                <a href="#" class="btn btn--small btn--outline">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section__title">Habilidades Técnicas</h2>
+                <div class="skills__grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category__title">Frontend</h3>
+                        <div class="skill-category__skills">
+                            <div class="skill-item">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">React</span>
+                                    <span class="skill-item__percentage">90%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">Next.js</span>
+                                    <span class="skill-item__percentage">85%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">TypeScript</span>
+                                    <span class="skill-item__percentage">80%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">Tailwind CSS</span>
+                                    <span class="skill-item__percentage">95%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" data-width="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category__title">Herramientas</h3>
+                        <div class="skill-category__skills">
+                            <div class="skill-item">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">Git</span>
+                                    <span class="skill-item__percentage">85%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">Webpack</span>
+                                    <span class="skill-item__percentage">70%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">Figma</span>
+                                    <span class="skill-item__percentage">75%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">VS Code</span>
+                                    <span class="skill-item__percentage">95%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" data-width="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category__title">Backend</h3>
+                        <div class="skill-category__skills">
+                            <div class="skill-item">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">Node.js</span>
+                                    <span class="skill-item__percentage">70%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">Express</span>
+                                    <span class="skill-item__percentage">65%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" data-width="65"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">MongoDB</span>
+                                    <span class="skill-item__percentage">60%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" data-width="60"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">PostgreSQL</span>
+                                    <span class="skill-item__percentage">55%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" data-width="55"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section__title">Contacto</h2>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <h3 class="contact__info-title">Hablemos</h3>
+                        <p class="contact__info-text">
+                            Estoy siempre interesado en nuevas oportunidades y proyectos emocionantes. Si tienes una idea o
+                            simplemente quieres saludar, no dudes en contactarme.
+                        </p>
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <i class="fas fa-envelope"></i>
+                                <span>nathaxx09@hotmail.com</span>
+                            </div>
+                            <div class="contact__detail">
+                                <i class="fas fa-phone"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="contact__detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Ciudad, País</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__form-container">
+                        <div class="contact__form-header">
+                            <h3 class="contact__form-title">Envíame un mensaje</h3>
+                            <p class="contact__form-subtitle">Te responderé lo antes posible</p>
+                        </div>
+                        <form class="contact__form" id="contactForm">
+                            <div class="form__row">
+                                <input type="text" class="form__input" placeholder="Nombre" required>
+                                <input type="email" class="form__input" placeholder="Email" required>
+                            </div>
+                            <input type="text" class="form__input" placeholder="Asunto" required>
+                            <textarea class="form__textarea" placeholder="Tu mensaje..." rows="5" required></textarea>
+                            <button type="submit" class="btn btn--primary btn--full">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__text">
+                    <p>Hecho con <i class="fas fa-heart"></i> por un desarrollador frontend</p>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Frontend Developer Portfolio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
