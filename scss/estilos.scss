@@ -380,7 +380,7 @@ body {
   }
 }
 
-// Projects Section
+// projectos
 .projects {
   padding: 5rem 0;
   background-color: rgba($color-bg-secondary, 0.5);
@@ -465,7 +465,7 @@ body {
   font-weight: 600;
 }
 
-// Skills Section
+// habilidades
 .skills {
   padding: 5rem 0;
 
@@ -534,15 +534,14 @@ body {
   }
 }
 
-// Contact Section
+// contacto
 .contact {
   padding: 5rem 0;
   background-color: rgba($color-bg-secondary, 0.5);
-
   &__content {
     display: grid;
     gap: 3rem;
-
+    
     @media (min-width: $breakpoint-md) {
       grid-template-columns: 1fr 1fr;
     }
@@ -587,6 +586,7 @@ body {
     border: 1px solid $color-border;
     border-radius: 0.5rem;
     padding: 1.5rem;
+    width: 70%;
   }
 
   &__form-title {
@@ -623,6 +623,7 @@ body {
   color: $color-text-primary;
   @include transition();
 
+  width: 100%;
   &::placeholder {
     color: $color-text-secondary;
   }
