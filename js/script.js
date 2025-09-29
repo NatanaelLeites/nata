@@ -3,7 +3,6 @@ const menuBtn = document.getElementById("menuBtn")
 const menuIcon = document.getElementById("menuIcon")
 const mobileNav = document.getElementById("mobileNav")
 const contactForm = document.getElementById("contactForm")
-
 // Mobile Menu Toggle
 menuBtn.addEventListener("click", () => {
   mobileNav.classList.toggle("active")
@@ -14,7 +13,6 @@ menuBtn.addEventListener("click", () => {
     menuIcon.className = "fas fa-bars"
   }
 })
-
 // Close mobile menu when clicking on links
 const mobileLinks = document.querySelectorAll(".header__mobile-link")
 mobileLinks.forEach((link) => {
@@ -23,7 +21,6 @@ mobileLinks.forEach((link) => {
     menuIcon.className = "fas fa-bars"
   })
 })
-
 // Smooth scrolling for navigation links
 const navLinks = document.querySelectorAll('a[href^="#"]')
 navLinks.forEach((link) => {
@@ -43,7 +40,6 @@ navLinks.forEach((link) => {
     }
   })
 })
-
 // Intersection Observer for animations
 const observerOptions = {
   threshold: 0.1,
@@ -57,7 +53,6 @@ const observer = new IntersectionObserver((entries) => {
     }
   })
 }, observerOptions)
-
 // Add fade-in class to elements and observe them
 const animatedElements = document.querySelectorAll(
   ".section__title, .about__content, .project-card, .skill-category, .contact__content",
@@ -66,7 +61,6 @@ animatedElements.forEach((el) => {
   el.classList.add("fade-in")
   observer.observe(el)
 })
-
 // Animate skill bars when skills section is visible
 const skillsSection = document.getElementById("skills")
 const skillBars = document.querySelectorAll(".skill-item__progress")
@@ -182,14 +176,3 @@ function typeWriter(element, text, speed = 100) {
 
   type()
 }
-
-// Uncomment to enable typing effect
-// document.addEventListener('DOMContentLoaded', () => {
-//     const heroTitle = document.querySelector('.hero__title');
-//     if (heroTitle) {
-//         const originalText = heroTitle.textContent;
-//         setTimeout(() => {
-//             typeWriter(heroTitle, originalText, 100);
-//         }, 1000);
-//     }
-// });

@@ -318,6 +318,7 @@ body {
 
 .projects {
   padding: 5rem 0;
+  margin-top: 1rem;
   background-color: rgba(17, 24, 39, 0.5);
 }
 .projects__grid {
@@ -456,7 +457,7 @@ body {
 }
 
 .contact {
-  padding: 5rem 0;
+  padding: 1rem 0;
   background-color: rgba(17, 24, 39, 0.5);
 }
 .contact__content {
